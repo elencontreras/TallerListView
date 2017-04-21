@@ -13,6 +13,7 @@
     <string name="base">Ingrese Base</string>
     <string name="altura">Ingrese Altura</string>
     <string name="opeRealizadas">Operaciones Realizadas</string>
+    <string name="mensaje">Operación Agregada</string>
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/opeRealizadas</item>

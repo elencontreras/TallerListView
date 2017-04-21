@@ -24,7 +24,7 @@
         <activity android:name=".Triangulo" />
         <activity android:name=".RespuestaCuadrado" />
         <activity android:name=".ResultadoTriangulo" />
-        <activity android:name=".OperacionesRealizadas"></activity>
+        <activity android:name=".ListadoOperaciones"></activity>
     </application>
 
 </manifest>

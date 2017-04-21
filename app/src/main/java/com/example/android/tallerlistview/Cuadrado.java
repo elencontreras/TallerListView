@@ -2,6 +2,7 @@ package com.example.android.tallerlistview;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class Cuadrado extends AppCompatActivity {
     private Resources res;
     private Intent i;
     private Bundle b;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +34,23 @@ public class Cuadrado extends AppCompatActivity {
 
     public void calcularCuadrado(View v){
         double lado, area;
-
+        String l="Lado: ";
+        String nombOperación="Área del Cuadrado";
         lado=Double.parseDouble(cajalado.getText().toString().trim());
 
         area=lado*lado;
 
+        l=l+area;
+
+        Operacion o= new Operacion(nombOperación,l,area);
+        o.guardar();
+        new AlertDialog.Builder(this).setMessage(res.getString(R.string.mensaje)).show();
+
+
         b.putDouble("result",area);
         i.putExtras(b);
         startActivity(i);
+
 
     }
 

@@ -36,7 +36,7 @@ public class Principal extends AppCompatActivity {
                         startActivity(i);
                         break;
                     case 1:
-                        i=new Intent(Principal.this,OperacionesRealizadas.class);
+                        i=new Intent(Principal.this,ListadoOperaciones.class);
                         startActivity(i);
                         break;
                 }
